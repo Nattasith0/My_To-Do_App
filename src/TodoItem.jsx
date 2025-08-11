@@ -21,7 +21,7 @@ function TodoItem({ todo }) {
           value={newText}
           onChange={(e) => setNewText(e.target.value)}
           onBlur={handleSave}
-          onKeyPress={(e) => e.key === 'Enter' && handleSave()}
+          onKeyDown={(e) => e.key === 'Enter' && handleSave()}
           autoFocus
         />
       ) : (
