@@ -201,11 +201,11 @@ button {
 }
 
 .todo-item .edit-btn:hover {
-  background-color: #ec971f;
+  background-color: #007621;
 }
 
 .todo-item .save-btn:hover {
-  background-color: #4cae4c;
+  background-color: #4c97ae;
 }
 
 .todo-item input[type="text"] {
