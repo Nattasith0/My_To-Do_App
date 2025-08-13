@@ -45,7 +45,7 @@ function TodoAppContainer() {
     return (
         <TodoContext.Provider value={todoContextValue}>
             <div className="app">
-                <h1>My To-Do List (Nattasith Manochai)</h1>
+                <h1>My To-Do List</h1>
                 <TodoForm />
                 <TodoList />
             </div>
