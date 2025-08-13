@@ -25,12 +25,13 @@ function TodoAppContainer() {
     };
 
     const editTodo = (id, newText) => {
-        setTodos(
-            todos.map(todo =>
+        setTodos(prevTodos =>
+            prevTodos.map(todo =>
                 todo.id === id ? { ...todo, text: newText } : todo
             )
         );
     };
+
 
     const todoContextValue = {
         todos,

@@ -20,7 +20,6 @@ function TodoItem({ todo }) {
           type="text"
           value={newText}
           onChange={(e) => setNewText(e.target.value)}
-          onBlur={handleSave}
           onKeyDown={(e) => e.key === 'Enter' && handleSave()}
           autoFocus
         />
@@ -31,7 +30,7 @@ function TodoItem({ todo }) {
       )}
       <div>
         {isEditing ? (
-          <button onClick={handleSave} className="save-btn">บันทึก</button>
+          <button onClick={handleSave}>บันทึก</button>
         ) : (
           <button onClick={() => setIsEditing(true)} className="edit-btn">แก้ไข</button>
         )}
